@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../styles/reset.css" />
     <link rel="stylesheet" href="../styles/index.css" />
@@ -41,56 +42,15 @@
 
         <aside class="dashboard-content">
           <div class="department-box">
-            <header>
-              <a href="./adddept.html"><button>Add Department</button></a>
-              <button>Remove Department</button>
-            </header>
-            <table>
-              <thead>
-                <tr>
-                  <td>name</td>
-                  <td>code</td>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Accounting</td>
-                  <td>AC</td>
-                </tr>
-                <tr>
-                  <td>Computer Science</td>
-                  <td>CSC</td>
-                </tr>
-                <tr>
-                  <td>Computer Engineering</td>
-                  <td>CPE</td>
-                </tr>
-                <tr>
-                  <td>Accounting</td>
-                  <td>AC</td>
-                </tr>
-                <tr>
-                  <td>Computer Science</td>
-                  <td>CSC</td>
-                </tr>
-                <tr>
-                  <td>Computer Engineering</td>
-                  <td>CPE</td>
-                </tr>
-                <tr>
-                  <td>Accounting</td>
-                  <td>AC</td>
-                </tr>
-                <tr>
-                  <td>Computer Science</td>
-                  <td>CSC</td>
-                </tr>
-                <tr>
-                  <td>Computer Engineering</td>
-                  <td>CPE</td>
-                </tr>
-              </tbody>
-            </table>
+            <form action="">
+                <label for="name">Name:</label>
+                <input name="name" type="text" placeholder="Type In Your Name">
+                <br>
+                <label for="code">Department Code:</label>
+                <input name="code" type="text" placeholder="Type In Department Code">
+                
+                <button>SUBMIT</button>
+            </form>
           </div>
         </aside>
       </main>
