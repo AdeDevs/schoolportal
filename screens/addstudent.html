@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../styles/reset.css" />
+  <link rel="stylesheet" href="../styles/index.css" />
+  <link rel="stylesheet" href="../styles/student.css" />
+  <script src="../script.js" defer></script>
+  <title>Best Solution</title>
+</head>
+
+<body>
+  <div class="parent">
+    <header>
+      <nav class="navbar">
+        <a class="logo" href="#">Best Solution</a>
+
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+    </header>
+    <main class="dashboard-main">
+      <aside class="dashboard-menu">
+        <ul class="nav-menu">
+          <div>
+            <a href="../index.html" class="nav-link">
+              <li>Dashboard</li>
+            </a>
+
+            <a href="./department.html" class="nav-link">
+              <li>Department</li>
+            </a>
+
+            <a href="./student.html" class="nav-link">
+              <li id="active">Students</li>
+            </a>
+
+            <a href="./classes.html" class="nav-link">
+              <li>Classes</li>
+            </a>
+
+            <a href="./result.html" class="nav-link">
+              <li>Result Checker</li>
+            </a>
+          </div>
+        </ul>
+      </aside>
+
+      <aside class="dashboard-content">
+        <div class="student-box">
+          <form action="">
+            <label for="surname">Surname:</label>
+            <input type="text" id="surname" required placeholder="Surname"></label> <br>
+            <label for="othernames">Other Names:</label>
+            <input type="text" id="othernames" required placeholder="Other Names"></label> <br>
+            <label for="initials">Initials:</label>
+            <input type="text" id="initials" required placeholder="Initials"></label><br>
+            <label for="entry">Year of Entry:</label>
+            <input type="date" id="entry" required><br>
+            <label for="relationship">Marital Status:</label>
+            <select id="relationship" required>
+              <option value="">Single</option>
+              <option value="taken">Taken</option>
+              <option value="complicated">Complicated</option>
+            </select><br>
+            <label for="country">Nationality:</label>
+            <select id="country" required>
+              <option value="NG">Nigeria</option>
+              <option value="GH">Ghana</option>
+              <option value="SA">South Africa</option>
+            </select><br>
+            <section class="gender">
+              <p>Gender:</p>
+              <input type="radio" id="male" name="gender">
+              <label for="male">Male</label>
+              <input type="radio" id="female" name="gender">
+              <label for="female">Female</label>
+            </section>
+            <label for="department">Department</label>
+            <select id="department" required>
+              <option value=""></option>
+              <option value=""></option>
+              <option value=""></option>
+            </select><br>
+            <button>SUBMIT</button>
+          </form>
+        </div>
+      </aside>
+    </main>
+  </div>
+</body>
+
+</html>

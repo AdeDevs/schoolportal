@@ -1,9 +1,9 @@
-.department-box {
+.student-box {
     width: 100%;
     color: #000;
 }
 
-.department-box header {
+.student-box header {
     background-color: transparent;
     display: flex;
     justify-content: space-between;
@@ -11,12 +11,12 @@
     width: 99%;
 }
 
-.department-box header button {
+.student-box header button {
     border: 2px solid rgb(0, 0, 0);
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     font-family: "Poppins", sans-serif;
     font-weight: 500;
-    background-color: rgb(255, 0, 0);
+    background-color: rgb(0, 30, 255);
     padding: 10px;
     font-size: 15px;
     transition: 300ms;
@@ -24,19 +24,19 @@
     border-radius: 5px;
 }
 
-.department-box header button:hover {
-    background-color: rgb(0, 0, 0);
-    color: rgb(255, 0, 0);
+.student-box header button:hover {
+    background-color: rgba(0, 29, 248, 0.604);
+    color: rgb;
     cursor: pointer;
 }
 
-.department-box table {
+.student-box table {
     width: 100%;
     border-bottom: 2px solid black;
     margin: 10px 0;
 }
 
-.department-box table thead {
+.student-box table thead {
     padding:50px 10px;
     text-transform: uppercase;
     font-family: "Young Serif", sans-serif;
@@ -44,17 +44,17 @@
     color: #fff;
 }
 
-.department-box table tbody {
+.student-box table tbody {
     background-color: rgb(0, 30, 255);
     color: #fff;
 }
 
-.department-box table thead td{
+.student-box table thead td{
     border-bottom: none;
     border-right: none;
 }
 
-.department-box table td {
+.student-box table td {
     padding: 20px 10px;
     border-top: 2px solid black;
     border-right: 2px solid black;
@@ -62,20 +62,19 @@
     cursor: pointer;
 }
 
-.department-box form label { 
-    align-items: center;
+
+.student-box form {
+    width: 100%;
+}
+
+.student-box form label {
     font-size: 15px;
     display: block;
 }
 
-.department-box form {
-    width: 100%;
-}
-
-.department-box form input {
-    padding: 15px;
+.student-box form input {
+    padding: 10px;
     border-radius: 5px;
-    margin: 10px auto;
     border: none;
     width: 30%;
     box-sizing: border-box;
@@ -84,11 +83,11 @@
     margin-bottom: 30px;
 }
 
-.department-box form input:focus {
+.student-box form input:focus {
     border: 2px solid #000;
 }
 
-.department-box form button {
+.student-box form button {
     display: block;
     border: 2px solid rgb(0, 0, 0);
     color: rgb(255, 255, 255);
@@ -102,14 +101,65 @@
     border-radius: 5px;
 }
 
-.department-box form button:hover {
+.student-box form button:hover {
     background-color: rgb(30, 255, 0);
     color: black;
     cursor: pointer;
 }
 
-@media screen and (max-width:540px) {
-    .department-box form input {
+.student-box form select {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    width: 30%;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    border: 2px solid #808080;
+    margin-bottom: 30px;
+    color: #808080;
+}
+
+.gender {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.student-box form .gender input {
+    width: fit-content;
+    padding: 0;
+    margin: 0 5px 0 10px;
+    background-color: red;
+}
+
+.student-box form .gender label {
+    font-weight: 500;
+    font-size: 13px;
+}
+
+
+.gender p {
+    display: flex;
+    font-size: 15px;
+}
+
+@media screen and (max-width:1040px) {
+    .student-box form input {
         width: 100%;
+    }
+    .student-box form select {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:540px) {
+    .student-box form input {
+        width: 100%;
+    }
+    .student-box form select {
+        width: 100%;
+    }
+    .dashboard-content div {
+        height: 97%;
     }
 }
