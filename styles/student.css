@@ -11,7 +11,7 @@
     width: 99%;
 }
 
-.student-box header button {
+.student-box header button:nth-child(1), .student-box header button:nth-child(2) {
     border: 2px solid rgb(0, 0, 0);
     color: rgb(255, 255, 255);
     font-family: "Poppins", sans-serif;
@@ -22,6 +22,11 @@
     transition: 300ms;
     box-sizing: border-box;
     border-radius: 5px;
+}
+
+.student-box header button:nth-child(2) {
+    background-color: red;
+    color: #000;
 }
 
 .student-box header button:hover {
