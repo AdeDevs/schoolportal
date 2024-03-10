@@ -37,9 +37,10 @@
 
 .department-box table {
     width: 100%;
-    border-bottom: 1px solid black;
     margin: 10px 0;
     font-size: 13px;
+    border-bottom: 1px solid #000;
+    border-radius: 10px;
 }
 
 .department-box table thead {
@@ -51,13 +52,20 @@
 }
 
 .department-box table tbody {
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(205, 205, 205);
     color: rgb(0, 0, 0);
 }
 
-.department-box table thead td{
+.department-box table thead tr td:nth-child(1){
     border-bottom: none;
-    border-right: none;
+    border-right: 1px solid rgb(205, 205, 205);
+    border-radius: 10px 0 0 0;
+}
+
+.department-box table thead tr td:nth-last-child(1){
+    border-radius: 0 10px 0 0;
+    border: 10px 0 0 2px;
+    border-left: 1px solid rgb(205, 205, 205);
 }
 
 .department-box table td {
@@ -66,6 +74,14 @@
     border-right: 1px solid black;
     border-left: 1px solid black;
     cursor: pointer;
+}
+
+.department-box table tbody tr:nth-last-child(1) td:nth-child(1) {
+    border-radius: 0 0 0 10px;
+}
+
+.department-box table tbody tr:nth-last-child(1) td:nth-last-child(1) {
+    border-radius: 0 0 10px 0;
 }
 
 .department-box form label { 
@@ -138,7 +154,7 @@
     font-size: 15px;
 }
 
-@media screen and (max-width:540px) {
+@media screen and (max-width:1040px) {
     .department-box form input {
         width: 100%;
     }

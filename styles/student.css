@@ -40,6 +40,7 @@
     border-bottom: 1px solid black;
     margin: 10px 0;
     font-size: 13px;
+    border-radius: 10px;
 }
 
 .student-box table thead {
@@ -51,13 +52,36 @@
 }
 
 .student-box table tbody {
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(205, 205, 205);
     color: rgb(0, 0, 0);
 }
 
-.student-box table thead td{
+.student-box table thead tr td:nth-child(1){
     border-bottom: none;
-    border-right: none;
+    border-right: 1px solid rgb(205, 205, 205);
+    border-radius: 10px 0 0 0;
+}
+
+.student-box table thead tr td:nth-last-child(1){
+    border-radius: 0 10px 0 0;
+    border: 10px 0 0 2px;
+    border-left: 1px solid rgb(205, 205, 205);
+}
+
+.student-box table thead td{
+    padding: 20px 10px;
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+    cursor: pointer;
+}
+
+.student-box table tbody tr:nth-last-child(1) td:nth-child(1) {
+    border-radius: 0 0 0 10px;
+}
+
+.student-box table tbody tr:nth-last-child(1) td:nth-last-child(1) {
+    border-radius: 0 0 10px 0;
 }
 
 .student-box table td {
