@@ -10,3 +10,13 @@ document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", 
     hamburger.classList.remove("active");
     navMenu.classList.remove("active"); 
 }))
+
+function OpenMenu() {
+    document.getElementById("close").style.display = "initial";
+    document.getElementById("menu").style.display = "none";
+}
+
+function CloseMenu() {
+    document.getElementById("close").style.display = "none";
+    document.getElementById("menu").style.display = "initial";
+}

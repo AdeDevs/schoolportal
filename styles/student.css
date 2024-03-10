@@ -13,13 +13,13 @@
 
 .student-box header button:nth-child(1), .student-box header button:nth-child(2) {
     border: 2px solid rgb(0, 0, 0);
-    color: rgb(255, 255, 255);
     font-family: "Poppins", sans-serif;
-    font-weight: 500;
-    background-color: rgb(0, 30, 255);
+    font-weight: 200;
+    background-color: rgb(205, 205, 205);
+    color: rgb(255, 255, 255);
     padding: 10px;
-    font-size: 15px;
-    transition: 300ms;
+    font-size: 13px;
+    transition: 500ms;
     box-sizing: border-box;
     border-radius: 5px;
 }
@@ -30,19 +30,20 @@
 }
 
 .student-box header button:hover {
-    background-color: rgba(0, 29, 248, 0.604);
-    color: rgb;
+    background-color: #000;
+    color: rgb(255, 255, 255);
     cursor: pointer;
 }
 
 .student-box table {
     width: 100%;
-    border-bottom: 2px solid black;
+    border-bottom: 1px solid black;
     margin: 10px 0;
+    font-size: 13px;
 }
 
 .student-box table thead {
-    padding:50px 10px;
+    padding: 50px 10px;
     text-transform: uppercase;
     font-family: "Young Serif", sans-serif;
     background: #000;
@@ -50,8 +51,8 @@
 }
 
 .student-box table tbody {
-    background-color: rgb(0, 30, 255);
-    color: #fff;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
 }
 
 .student-box table thead td{
@@ -61,9 +62,9 @@
 
 .student-box table td {
     padding: 20px 10px;
-    border-top: 2px solid black;
-    border-right: 2px solid black;
-    border-left: 2px solid black;
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
     cursor: pointer;
 }
 
