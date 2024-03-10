@@ -27,7 +27,8 @@ header {
     font-size: 20px;
     text-transform: uppercase;
     width: fit-content;
-    font-family: "DM Serif Display";
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
     box-sizing: border-box;
 }
 
