@@ -16,7 +16,7 @@
     font-family: "Poppins", sans-serif;
     font-weight: 200;
     background-color: rgb(205, 205, 205);
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     padding: 10px;
     font-size: 13px;
     transition: 500ms;
@@ -52,7 +52,7 @@
 }
 
 .student-box table tbody {
-    background-color: rgb(205, 205, 205);
+    background-color: rgb(230, 230, 230);
     color: rgb(0, 0, 0);
 }
 

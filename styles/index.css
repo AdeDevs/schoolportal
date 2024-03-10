@@ -21,12 +21,13 @@ header {
     align-items: center;
     font-family: "Montserrat", sans-serif;
     justify-content: space-between;
+    text-align: center;
+    position: relative;
 }
 
 .logo {
     font-size: 20px;
     text-transform: uppercase;
-    width: fit-content;
     font-weight: 500;
     font-family: "Poppins", sans-serif;
     box-sizing: border-box;
@@ -34,12 +35,12 @@ header {
 
 #menu {
     display: block;
-    margin-right: 30px;
+    margin-right: 20px;
 }
 
 #close {
-    display: none;
-    margin-right: 30px;
+    display: none;    
+    margin-right: 20px;
 }
 
 .avatar {
@@ -216,7 +217,7 @@ a {
     .hamburger.active .bar:nth-child(3){
         transform: translateY(-8px) rotate(-45deg);
     }
-
+    
     .nav-menu {
         position: fixed;
         left: -100%;
