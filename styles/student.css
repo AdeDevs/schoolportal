@@ -195,7 +195,7 @@
     .student-box form select {
         width: 100%;
     }
-    .dashboard-content div {
+    .dashboard-content>div {
         height: 97%;
     }
 }
