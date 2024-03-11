@@ -84,9 +84,35 @@ a {
 .dashboard-content>div {
     height: 100%;
     overflow-y: scroll;
+    overflow-x: hidden;
     font-size: 14px;
     padding: 0 5px;
     font-weight: 300;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.dashboard-content .dashboard-box {
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+
+
+.dashboard-box section {
+    width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    height: 50vh;
+    background-color: rgb(218, 218, 218);
+    margin: 20px auto;
+    color: rgb(0, 0, 0);
+    box-shadow: 5px 5px rgb(131, 131, 131);
 }
 
 .dashboard-menu {
@@ -178,6 +204,16 @@ a {
     }
     .dashboard-menu {
         width: 35%;
+    }
+    /* .dashboard-content .dashboard-box {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+    } */
+    .dashboard-box section {
+        min-width: 100%;
+        height: 20vh;
+        margin: 10px auto;
     }
 }
 
